@@ -1,0 +1,8 @@
+<li class="nav-item">
+    <a class="nav-link {{ item.status }}" href="{{ item['href'] }}">
+        {{ item.caption }}
+        {% if item.status == 'active' %}
+            <span class="sr-only">(current)</span>
+        {% endif %}
+    </a>
+</li>

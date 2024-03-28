@@ -1,0 +1,17 @@
+{% extends "pages/base.twig" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<h1>Contact Us</h1>
+
+{% import "partials/forms.twig" as forms %}
+
+<form method="post">
+    {{ forms.input('name', post.name) }}
+    {{ forms.input('email', post.email, '', 'We will never share your email with anyone.') }}
+    {{ forms.textarea('message', post.message) }}
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+{% endblock %}
