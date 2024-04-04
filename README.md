@@ -25,6 +25,14 @@ or
 git clone https://github.com/danpoynor/basic-twig-template-views-demo.git
 ```
 
+Then `cd` into the project directory and run:
+
+```sh
+composer install
+```
+
+This will install the Twig templating engine and other dependencies.
+
 ## Usage
 
 Use [MAMP](https://www.mamp.info/en/mamp) or other server to run the code in your browser. Be sure to use the `public` directory as the document root (where the `index.php` file is). Start the server and view the app at the url such as <localhost:8888>.
@@ -32,7 +40,7 @@ Use [MAMP](https://www.mamp.info/en/mamp) or other server to run the code in you
 ## Developer Notes on How This Project Was Initially Created
 
 1. Ensure PHP and Composer are installed.
-2. Create a new directory for your app and cd into it.
+2. Create a new directory for your app and `cd` into it.
 3. Then run the following command to get the latest version of Twig:
 
 ```sh
@@ -51,7 +59,7 @@ This will create the initial project structure:
     └── twig/
 ```
 
-3. Open your IDE in the current directory with soemthing like `code .`.
+3. Open your IDE in the current directory with something like `code .`.
 4. Create a `public` folder with an `index.php` file inside it.
 5. Copy the [Basic API Usage](https://twig.symfony.com/doc/3.x/api.html) code from the documentation, or use something like this in the `index.php` file:
 
